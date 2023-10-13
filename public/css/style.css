@@ -1,3 +1,65 @@
 * {
-  font-family: "Montserrat", "Interop" sans-serif;
+  font-family: "Montserrat", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+a {
+  text-decoration: none !important;
+  color: #333 !important;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-bottom: 0 !important;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 991px) {
+  #head nav #basic-navbar-nav .navbar-nav {
+    padding: 2rem 0;
+  }
+}
+@media (min-width: 992px) {
+  #head nav.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+}
+#head nav.bg-body-tertiary {
+  background-color: #fff !important;
+}
+#head nav .navbar-toggler {
+  border: none;
+}
+#head nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+#head nav #basic-navbar-nav .navbar-nav {
+  margin-right: 0 !important;
+}
+
+#mainslide .imgslide .swiper-wrapper .swiper-slide {
+  margin: 0 2.5px;
+}
+@media (max-width: 767px) {
+  #mainslide .imgslide .swiper-wrapper .swiper-slide {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+#mainslide .imgslide .swiper-wrapper .swiper-slide .img-wrapper a img {
+  height: 40vw;
+  min-height: 400px;
+}
+@media (max-width: 767px) {
+  #mainslide .imgslide .swiper-wrapper .swiper-slide .img-wrapper a img {
+    height: auto;
+    min-height: auto;
+    width: 95vw;
+  }
 }/*# sourceMappingURL=style.css.map */

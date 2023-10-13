@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Footer = () => {
+
+const Footer:React.FC = () => {
   return (
-    <footer>풋터 컴포넌트</footer>
+    <footer></footer>
   )
 }
 

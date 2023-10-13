@@ -1,8 +1,17 @@
 import React from 'react'
+import { Con } from '../model/Type'
 
-const Content = () => {
+import Mainslide from '../contents/Mainslide'
+
+interface ContentProps{
+  info:Con
+}
+
+const Content:React.FC<ContentProps>= ({info}) => {
   return (
-    <main>콘텐츠 컴포넌트</main>
+    <main>
+      <Mainslide info={info.mainslide}></Mainslide>
+    </main>
   )
 }
 
