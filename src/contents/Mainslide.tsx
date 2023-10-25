@@ -14,10 +14,10 @@ interface ConSlideProps{
 }
 
 const Mainslide:React.FC<ConSlideProps> = ({info}) => {
-    const [controlledSwiper, setControlledSwiper] = useState<SwiperClass | null>(null);
+    const [controlledSwiper, setControlledSwiper] = useState<any>(null);
     return (
         <section id="mainslide">
-            <div>
+            <div className='position-relative'>
                 <Swiper
                     className="mySwiper imgslide"
                     modules={[ Controller, Navigation]}
@@ -51,14 +51,14 @@ const Mainslide:React.FC<ConSlideProps> = ({info}) => {
                         })
                     }
                 </Swiper>
-                <div>
+                <div id="txt">
                     <Swiper
                         modules={[Controller, EffectFade]}
                         onSwiper={setControlledSwiper}
                         slidesPerView={1}
                         effect={'fade'}
                         cssMode={true}
-                        className={`mySwiper`}
+                        className={`mySwiper txtslide`}
                     >
                         {
                             info.map((v, i) => {
