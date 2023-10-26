@@ -11,12 +11,19 @@ export type Navi = {
 
 // 컨텐츠
 export type Con = {
+    mainvideo:ConMainVideo;
     mainslide:ConMainslide[];
-    new:ConNew[];
+    new:Detail[];
     best:Detail[];
     thema:ConThema;
     event:ConEvent[];
     review:ConReview[];
+}
+
+//컨텐츠_메인비디오
+export type ConMainVideo = {
+    pc : string;
+    mo : string;
 }
 
 // 컨텐츠_슬라이드
@@ -34,17 +41,13 @@ export type Slidetext = {
 }
 
 // 컨텐츠_new
-export type ConNew = {
-    thumb:string;
-    detail:Detail;
-}
 export type Detail = {
+    thumb? : string;
     src:string;
     category?: string;
     title: string;
     price: number;
     discount?: number;
-    rank? : string;
 }
 
 // 컨텐츠_테마

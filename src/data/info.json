@@ -26,6 +26,10 @@
         ]
     },
     "content":{
+        "mainvideo":{
+            "pc" : "/video/kint_film.mp4",
+            "mo" : "/video/kint_film_mo.mp4"
+        },
         "mainslide":[
             {
                 "slideimg":{
@@ -81,44 +85,36 @@
         "new" : [
             {
                 "thumb":"/img/1111.jpeg",
-                "detail":{
-                    "src":"/img/1-1.jpeg",
-                    "category":"모이사나이트",
-                    "title":"1캐럿 베이직 목걸이",
-                    "price":84900
-                }
+                "src":"/img/1-1.jpeg",
+                "category":"Moissanite",
+                "title":"1캐럿 베이직 목걸이",
+                "price":84900
             },
             {
                 "thumb":"/img/2222.jpeg",
-                "detail":{
-                    "src":"/img/2-1.jpeg",
-                    "category":"모이사나이트",
-                    "title":"스터드 드롭 귀걸이",
-                    "price":67900
-                }
+                "src":"/img/2-1.jpeg",
+                "category":"Moissanite",
+                "title":"스터드 드롭 귀걸이",
+                "price":67900
+                
             },
             {
                 "thumb":"/img/3333.jpeg",
-                "detail":{
-                    "src":"/img/3-1.jpeg",
-                    "category":"모이사나이트",
-                    "title":"베이직 팔찌",
-                    "price":73000
-                }
+                "src":"/img/3-1.jpeg",
+                "category":"Moissanite",
+                "title":"베이직 팔찌",
+                "price":73000
             },
             {
                 "thumb":"/img/4444.jpeg",
-                "detail":{
-                    "src":"/img/4-1.jpeg",
-                    "category":"모이사나이트",
-                    "title":"테니스 팔찌",
-                    "price":198000
-                }
+                "src":"/img/4-1.jpeg",
+                "category":"Moissanite",
+                "title":"테니스 팔찌",
+                "price":198000
             }
         ],
         "best":[
             {
-                "rank":"1",
                 "src":"/img/best1.jpeg",
                 "category":"[오늘도착]",
                 "title":"14K 18K 주얼리&플라워 까꿍베어 Premium Edition",
@@ -126,7 +122,6 @@
                 "discount":250100
             },
             {
-                "rank":"2",
                 "src":"/img/best2.jpeg",
                 "category":"[오늘도착]",
                 "title":"플라워 까꿍베어 패키지",
@@ -134,7 +129,6 @@
                 "discount":99900
             },
             {
-                "rank":"3",
                 "src":"/img/best3.jpeg",
                 "category":"[오늘도착]",
                 "title":"14K 18k 데일리 월계수 목걸이",
@@ -142,7 +136,6 @@
                 "discount":309000
             },
             {
-                "rank":"4",
                 "src":"/img/best4.jpeg",
                 "category":"[오늘도착]",
                 "title":"14K 18K 주얼리&달콤한 까꿍베어 Premium Edition",
@@ -150,7 +143,6 @@
                 "discount":226000
             },
             {
-                "rank":"5",
                 "src":"/img/best5.jpeg",
                 "category":"[오늘도착]",
                 "title":"달콤한 까꿍베어 패키지",
@@ -158,7 +150,6 @@
                 "discount":89900
             },
             {
-                "rank":"6",
                 "src":"/img/best6.png",
                 "category":"[오늘도착]",
                 "title":"14K 18K 스톤 물방울 목걸이",
@@ -166,7 +157,6 @@
                 "discount":279000
             },
             {
-                "rank":"7",
                 "src":"/img/best7.png",
                 "category":"[오늘도착]",
                 "title":"14K 18K 스톤 물방울 귀걸이",
@@ -174,7 +164,6 @@
                 "discount":105000
             },
             {
-                "rank":"8",
                 "src":"/img/best8.png",
                 "category":"[오늘도착]",
                 "title":"14K 18K 장미 플라워 목걸이&귀걸이 세트 Edition",

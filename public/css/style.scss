@@ -54,6 +54,51 @@ ul{
     }
 }
 
+#video{
+    width: 100%;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    // padding-top: 30px; /* IE6 workaround*/
+    position: relative;
+    @media(max-width:640px){
+        padding-bottom: 125.25%;
+        .videobox{
+            padding-bottom: 125.25% !important;
+        }
+    }
+    .introvideo{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .videobox{
+            position: relative;
+            padding-bottom: 56.25%; /* 16/9 ratio */
+            // padding-top: 30px; /* IE6 workaround*/
+            height: 0;
+            overflow: hidden;
+            margin: 0;
+            video{
+                z-index: -1;
+                width: 100%;
+                position: absolute;
+                &.pc_video{
+                    @media(max-width: 640px){
+                        display: none !important;
+                    }
+                }
+                &.mo_video{
+                    @media(min-width:641px){
+                        display: none !important;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
 // 메인 슬라이드
 #mainslide{
     padding-bottom: 5rem;
@@ -100,6 +145,7 @@ ul{
 
 #new{
     padding-bottom: 5rem;
+    padding-top: 5rem;
     .title{
         text-align: center;
         padding: 3rem 0;
@@ -123,49 +169,48 @@ ul{
             font-size: 20px;
         }
     }
-    .thumb{
-        height: 600px;
-        width: 600px;
-        margin: 0;
-        @media(max-width:1200px){
-            margin: 0 auto;
-            width: 400px;
-            height: 400px;
-        }
-        img{
-            width: 100%;
-        }
-    }
-    .detail{
-        padding-top: 1rem;
-        margin: 0;
-        width: calc(100% - 600px);
-        @media(max-width:1200px){
-            width: 80%;
-            margin: 0 auto;
-            min-width: 400px;
-        }
-        .swiper-wrapper{
-            .swiper-slide{
-                margin-right: 10px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .imgbox{
-                    img{
-                        width: 100%;
-                        max-width: 300px;
-                        min-width: 200px;
+    .newList{
+        ul{
+            li{
+                margin-bottom: 1.5rem;
+                .newBox{
+                    .imgBox{
+                        display: block;
+                        position: relative;
+                        &:hover{
+                            .hov{
+                                opacity: 1;
+                            }
+                        }
+                        .cate{
+                            position: absolute;
+                            top: 5px;
+                            left: 10px;
+                            color: #fff;
+                            z-index: 10;
+                            font-weight: 100;
+                            font-size: 12px;
+                        }
+                        .hov{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            opacity: 0;
+                            transition: 0.3s;
+                        }
                     }
-                }
-                .txtbox{
-                    p{
-                        display: inline;
-                    }
-                    div{
-                        p{
-                            display: inline;
+                    .txtBox{
+                        text-align: center;
+                        margin-top: 1.2rem;
+                        h2{
+                            font-size: 15px;
+                            font-weight: 100;
+                            padding-bottom: 0.5rem;
+                        }
+                        span{
+                            font-size: 15px;
+                            font-weight: 100;
                         }
                     }
                 }
