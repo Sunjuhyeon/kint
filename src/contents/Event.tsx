@@ -21,7 +21,7 @@ const Event:React.FC<EventProps> = ({info}) => {
             </div>
             <Swiper
                 pagination={{
-                    type: 'fraction',
+                    dynamicBullets: true,
                 }}
                 navigation={true}
                 loop={true}

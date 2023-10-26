@@ -116,78 +116,154 @@
         "best":[
             {
                 "src":"/img/best1.jpeg",
-                "category":"[오늘도착]",
-                "title":"14K 18K 주얼리&플라워 까꿍베어 Premium Edition",
-                "price":168900,
-                "discount":250100
+                "category":"",
+                "title":"",
+                "price":0,
+                "cls":"category neck"
             },
             {
-                "src":"/img/best2.jpeg",
+                "src":"/img/best1-1.png",
                 "category":"[오늘도착]",
-                "title":"플라워 까꿍베어 패키지",
+                "title":"스톤 물방울 목걸이",
+                "price":166000,
+                "cls":"list"
+            },
+            {
+                "src":"/img/best1-2.png",
+                "category":"[오늘도착]",
+                "title":"데일리 초승달 목걸이",
                 "price":168900,
-                "discount":99900
+                "cls":"list"
+            },
+            {
+                "src":"/img/best1-3.png",
+                "category":"[오늘도착]",
+                "title":"장미 플라워 목걸이",
+                "price":219000,
+                "cls":"list"
+            },
+            {
+                "src":"/img/best1-4.jpeg",
+                "category":"[오늘도착]",
+                "title":"연장 체인",
+                "price":39000,
+                "cls":"list"
+            },
+            {
+                "src":"/img/best1-5.jpeg",
+                "category":"[오늘도착]",
+                "title":"데일리 월계수 목걸이",
+                "price":223000,
+                "cls":"list"
+            },
+            {
+                "src":"/img/best2.png",
+                "category":"",
+                "title":"",
+                "price":0,
+                "cls":"category ear"
+            },
+            {
+                "src":"/img/best2-1.png",
+                "category":"[오늘도착]",
+                "title":"심플 스터드 귀걸이",
+                "price":23000,
+                "cls":"list"
+            },
+            {
+                "src":"/img/best2-2.png",
+                "category":"[오늘도착]",
+                "title":"하트 스터드 귀걸이",
+                "price":24000,
+                "cls":"list"
+            },
+            {
+                "src":"/img/best2-3.jpeg",
+                "category":"[오늘도착]",
+                "title":"귀걸이 골드 클러치(한쌍)",
+                "price":22000,
+                "cls":"list"
+            },
+            {
+                "src":"/img/best2-4.png",
+                "category":"[오늘도착]",
+                "title":"심플 볼 귀걸이",
+                "price":31000,
+                "cls":"list"
+            },
+            {
+                "src":"/img/best2-5.jpeg",
+                "category":"[오늘도착]",
+                "title":"데일리 벚꽃 귀걸이",
+                "price":117000,
+                "cls":"list"
             },
             {
                 "src":"/img/best3.jpeg",
-                "category":"[오늘도착]",
-                "title":"14K 18k 데일리 월계수 목걸이",
-                "price":223000,
-                "discount":309000
+                "category":"",
+                "title":"",
+                "price":0,
+                "cls":"category hand"
             },
             {
-                "src":"/img/best4.jpeg",
+                "src":"/img/best3-1.png",
                 "category":"[오늘도착]",
-                "title":"14K 18K 주얼리&달콤한 까꿍베어 Premium Edition",
-                "price":158900,
-                "discount":226000
+                "title":"열손가락 반지",
+                "price":41000,
+                "cls":"list"
             },
             {
-                "src":"/img/best5.jpeg",
+                "src":"/img/best3-2.png",
                 "category":"[오늘도착]",
-                "title":"달콤한 까꿍베어 패키지",
-                "price":55900,
-                "discount":89900
+                "title":"데일리 레이어드 반지",
+                "price":35000,
+                "cls":"list"
             },
             {
-                "src":"/img/best6.png",
+                "src":"/img/best3-3.jpeg",
                 "category":"[오늘도착]",
-                "title":"14K 18K 스톤 물방울 목걸이",
-                "price":166000,
-                "discount":279000
+                "title":"클래식 볼륨 반지",
+                "price":62000,
+                "cls":"list"
             },
             {
-                "src":"/img/best7.png",
+                "src":"/img/best3-4.png",
                 "category":"[오늘도착]",
-                "title":"14K 18K 스톤 물방울 귀걸이",
-                "price": 68000,
-                "discount":105000
+                "title":"데일리 레이어드 체인 반지",
+                "price":105000,
+                "cls":"list"
             },
             {
-                "src":"/img/best8.png",
+                "src":"/img/best3-5.png",
                 "category":"[오늘도착]",
-                "title":"14K 18K 장미 플라워 목걸이&귀걸이 세트 Edition",
-                "price":318000,
-                "discount":482000
+                "title":"데일리 볼 체인 반지",
+                "price":111000,
+                "cls":"list"
             }
         ],
         "thema":{
             "themalist":[
                 {
                    "title":"오르빗",
-                   "name":"first" 
+                   "name":"first" ,
+                   "cls":"on"
                 },
                 {
                    "title":"러브모먼츠",
-                   "name":"second" 
+                   "name":"second",
+                   "cls":""
+
                 },
                 {
                    "title":"러브락",
-                   "name":"third" 
+                   "name":"third",
+                   "cls":""
+
                 },
                 {
                    "title":"플라워포유",
-                   "name":"fourth" 
+                   "name":"fourth",
+                   "cls":""
                 }
             ],
             "list":{

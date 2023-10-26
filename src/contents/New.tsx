@@ -18,7 +18,7 @@ const New: React.FC<ConNewProps> = ({info}) => {
                 <ul className='d-flex flex-wrap'>
                     {
                         info.map((v, i) => {
-                            const price2 = v.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                            const price = v.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                             return(
                                 <li key={i} className='col-md-3 col-6'>
                                     <div className='newBox p-2'>
@@ -31,7 +31,7 @@ const New: React.FC<ConNewProps> = ({info}) => {
                                             <h2>
                                                 <a href="">{v.title}</a>
                                             </h2>
-                                            <span>{price2}</span>
+                                            <span>{price}</span>
                                         </div>
                                     </div>
                                 </li>

@@ -11,14 +11,14 @@ const Love:React.FC<LoveProps> = ({info}) => {
             <div className='bannerbox'>
                 <img src={info.banner} alt="banner" />
             </div>
-            <ul className='detailbox d-flex justify-content-center align-items-center pt-1'>
+            <div className='detailbox d-flex flex-wrap justify-content-between align-items-start pt-1'>
                 {
                     info.detail.map((v, i) => {
                         const price2 = v.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                         const discoun2 = v.discount ? v.discount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : '';
                         return (
-                            <li key={i} className='detaillist col-2'>
-                                <div className='p-1'>
+                            <div key={i} className='detaillist col-md-2 col-4'>
+                                <div className='paddingBox'>
                                     <div className='detailimg'>
                                         <img src={v.src} alt="orbit" />
                                     </div>
@@ -30,11 +30,11 @@ const Love:React.FC<LoveProps> = ({info}) => {
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </div>
                         )
                     })
                 }
-            </ul>
+            </div>
         </div>
   ) 
 }

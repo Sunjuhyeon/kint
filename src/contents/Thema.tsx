@@ -23,21 +23,32 @@ const Thema:React.FC<ConThemaProps> = ({info}) => {
         fourth : <Fourth info={info.list.flower}/>
     }
     const [thema, setThema] = useState('first');
+
+
     const handleClickButton = (e:any) => {
         const {name} = e.target;
+
+        e.target.classList.add('on');
+        document.querySelectorAll('.clickbutton button').forEach((button) => {
+            if (button.hasAttribute('name') && button.getAttribute('name') !== name){
+                button.classList.remove('on');
+            }
+        });
+
         setThema(name);
     }
+
     return (
         <section id='thema'>
             <div className='title'>
                 <h3>Thema</h3>
                 <p>테마별 컬렉션을 만나보세요.</p>
             </div>
-            <div className='clickbutton'>
+            <div className='clickbutton d-flex flex-wrap'>
                 {
                     info.themalist.map((v, i) => {
                         return(
-                            <button onClick={handleClickButton} name={v.name} key={i}>
+                            <button onClick={handleClickButton} name={v.name} key={i} className={`${v.cls}`}>
                                 {v.title}
                             </button>
                         )

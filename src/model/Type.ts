@@ -20,6 +20,17 @@ export type Con = {
     review:ConReview[];
 }
 
+// 상품 타입
+export type Detail = {
+    thumb?: string;
+    src: string;
+    category?: string;
+    title: string;
+    price: number;
+    discount?: number;
+    cls?: string;
+}
+
 //컨텐츠_메인비디오
 export type ConMainVideo = {
     pc : string;
@@ -40,16 +51,6 @@ export type Slidetext = {
     contents: string;
 }
 
-// 컨텐츠_new
-export type Detail = {
-    thumb? : string;
-    src:string;
-    category?: string;
-    title: string;
-    price: number;
-    discount?: number;
-}
-
 // 컨텐츠_테마
 export type ConThema = {
     themalist : ThemaTitle[];
@@ -58,6 +59,7 @@ export type ConThema = {
 export type ThemaTitle = {
     title : string;
     name : string;
+    cls : string;
 }
 export type ThemaList = {
     orbit : ThemaDetail;

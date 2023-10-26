@@ -22,28 +22,44 @@ const New: React.FC<ConBestProps> = ({ info }) => {
                     65,000리뷰가 입증하는 킨트의 BEST상품을 만나보세요.</p>
                 <a href="#none" className='more'>more view</a>
             </div>
-            <Swiper
-                cssMode={true}
-                navigation={true}
-                pagination={true}
-                mousewheel={true}
-                keyboard={true}
-                grid={{
-                    rows: 2,
-                }}
-                modules={[Grid, Navigation, Pagination, Mousewheel, Keyboard]}
-                className="mySwiper"
-            >
-                {
-                    info.map((v, i) => {
-                        return(
-                            <SwiperSlide>
-                                <img src={v.src} alt="" />
-                            </SwiperSlide>
-                        )
-                    })
-                }
-            </Swiper>
+            
+            <div className='container'>
+                <Swiper
+                    pagination={{
+                        type: 'progressbar',
+                    }}
+                    mousewheel={true}
+                    slidesPerView="auto"
+                    spaceBetween={0}
+                    keyboard={true}
+                    grid={{
+                        rows: 2,
+                    }}
+                    modules={[Grid, Navigation, Pagination, Mousewheel, Keyboard]}
+                    className="mySwiper"
+                >
+                    {
+                        info.map((v, i) => {
+                            const price = v.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                            return(
+                                <SwiperSlide className={`${v.cls} p-2`}>
+                                    <a href="#none" className='item'>
+                                        <img src={v.src} alt="" />
+                                        <div className='hoverBox'>
+                                            <p className='cate'>{v.category}</p>
+                                            <p className='tit'>{v.title}</p>
+                                            <p className='pri'>{price}</p>
+                                            <div className='iconBox'>
+                                                <i className="bi bi-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+                </Swiper>
+            </div>
         </section>
     )
 }
