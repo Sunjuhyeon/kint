@@ -5,23 +5,23 @@
         "navi":[
             {
                 "title":"New",
-                "link":""
+                "link":"#new"
             },
             {
                 "title":"Best",
-                "link":""
+                "link":"#best"
             },
             {
                 "title":"Thema",
-                "link":""
+                "link":"#thema"
             },
             {
                 "title":"Event",
-                "link":""
+                "link":"#event"
             },
             {
-                "title":"Atelier",
-                "link":""
+                "title":"Review",
+                "link":"#review"
             }
         ]
     },

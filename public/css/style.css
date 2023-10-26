@@ -349,7 +349,6 @@ ul {
   font-weight: 100;
   font-size: 20px;
   margin: 0;
-  padding-bottom: 1.5rem;
 }
 #thema .clickbutton {
   display: flex;
@@ -435,7 +434,6 @@ ul {
   font-weight: 100;
   font-size: 20px;
   margin: 0;
-  padding-bottom: 1.5rem;
 }
 @media (max-width: 768px) {
   #event .swiper {
@@ -569,13 +567,18 @@ ul {
   font-weight: 100;
   font-size: 20px;
   margin: 0;
-  padding-bottom: 1.5rem;
 }
 #review .swiper {
-  padding: 0 4rem;
+  padding: 0 0.9rem;
 }
-#review .swiper .swiper-wrapper .swiper-slide {
-  margin: 0 10px;
+#review .swiper .swiper-wrapper .swiper-slide:hover .background::before {
+  content: "";
+  backdrop-filter: blur(8px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 #review .swiper .swiper-wrapper .swiper-slide .reviewlist .background {
   margin: 0 auto;
@@ -584,6 +587,10 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+#review .swiper .swiper-wrapper .swiper-slide .reviewlist .background::before {
+  content: "";
+  transition: 0.3s;
 }
 #review .swiper .swiper-wrapper .swiper-slide .reviewlist .background.reviewbg1 {
   background-image: url(/img/reviewbg1.jpeg);
@@ -601,6 +608,40 @@ ul {
 }
 #review .swiper .swiper-wrapper .swiper-slide .reviewlist .iconbox i {
   color: #edc939;
+}
+#review .swiper .swiper-wrapper .swiper-slide .reviewlist .re_txt h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#review .swiper .swiper-wrapper .swiper-slide .reviewlist .re_txt p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+#review .swiper .swiper-button-prev {
+  background-image: url(/img/common-icon.svg);
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: 500px auto;
+  background-repeat: no-repeat;
+  background-position: -200px -200px;
+  filter: invert(0);
+}
+#review .swiper .swiper-button-prev::after {
+  display: none;
+}
+#review .swiper .swiper-button-next {
+  background-image: url(/img/common-icon.svg);
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: 500px auto;
+  background-repeat: no-repeat;
+  background-position: -250px -200px;
+  filter: invert(0);
+}
+#review .swiper .swiper-button-next::after {
+  display: none;
 }
 
 #contact {
@@ -620,7 +661,6 @@ ul {
   font-weight: 100;
   font-size: 20px;
   margin: 0;
-  padding-bottom: 1.5rem;
 }
 #contact form {
   width: 50vw;
@@ -690,28 +730,8 @@ ul {
 #contact form .agree label em {
   border-bottom: 1px solid #000;
 }
-#contact form .submitbox {
+#contact form .submit {
   position: relative;
-}
-#contact form .submitbox:hover::before {
-  width: 46%;
-}
-#contact form .submitbox::before {
-  content: "";
-  background-image: url(/img/arrow-rightlight.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: block;
-  position: absolute;
-  bottom: 13px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 20px;
-  transition: 0.5s;
-}
-#contact form .submitbox .submit {
   height: 100px;
   width: 100px;
   border-radius: 50px;
@@ -720,4 +740,19 @@ ul {
   color: #fff;
   font-size: 20px;
   font-weight: 100;
+}
+#contact form .submit:hover::before {
+  width: 46%;
+}
+#contact form .submit::before {
+  content: "\f138";
+  font-family: "bootstrap-icons";
+  display: block;
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 20px;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */

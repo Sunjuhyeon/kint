@@ -397,7 +397,6 @@ ul{
             font-weight: 100;
             font-size: 20px;
             margin: 0;
-            padding-bottom: 1.5rem;
         }
     }
     .clickbutton{
@@ -495,7 +494,6 @@ ul{
             font-weight: 100;
             font-size: 20px;
             margin: 0;
-            padding-bottom: 1.5rem;
         }
     }
     .swiper{
@@ -628,14 +626,25 @@ ul{
             font-weight: 100;
             font-size: 20px;
             margin: 0;
-            padding-bottom: 1.5rem;
         }
     }
     .swiper{
-        padding: 0 4rem;
+        padding: 0 0.9rem;
         .swiper-wrapper{
             .swiper-slide{
-                margin: 0 10px;
+                &:hover{
+                    .background{
+                        &::before{
+                            content: "";
+                            backdrop-filter: blur(8px);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
                 .reviewlist{
                     .background{
                         margin: 0 auto;
@@ -646,6 +655,10 @@ ul{
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
+                        &::before{
+                            content: "";
+                            transition: 0.3s;
+                        }
                         &.reviewbg1{
                             background-image: url(/img/reviewbg1.jpeg);
                         }
@@ -668,8 +681,44 @@ ul{
                             color: #edc939;
                         }
                     }
+                    .re_txt{
+                        h2{
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                        }
+                        p{
+                            font-size: 1rem;
+                            line-height: 1.25rem;
+                        }
+                    }
                     
                 }
+            }
+        }
+        .swiper-button-prev{
+            background-image: url(/img/common-icon.svg);
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-size: 500px auto;
+            background-repeat: no-repeat;
+            background-position: -200px -200px;
+            filter: invert(0);
+            &::after{
+                display: none;
+            }
+        }
+        .swiper-button-next{
+            background-image: url(/img/common-icon.svg);
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-size: 500px auto;
+            background-repeat: no-repeat;
+            background-position: -250px -200px;
+            filter: invert(0);
+            &::after{
+                display: none;
             }
         }
     }
@@ -690,7 +739,6 @@ ul{
             font-weight: 100;
             font-size: 20px;
             margin: 0;
-            padding-bottom: 1.5rem;
         }
     }
 
@@ -765,19 +813,24 @@ ul{
                 }
             }
         }
-        .submitbox{
+        .submit{
             position: relative;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            border: 1px solid #000;
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 100;
             &:hover{
                 &::before{
                     width: 46%;
                 }
             }
             &::before{
-                content: "";
-                background-image: url(/img/arrow-rightlight.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
+                content: "\F138";
+                font-family: "bootstrap-icons";
                 display: block;
                 position: absolute;
                 bottom: 13px;
@@ -786,16 +839,6 @@ ul{
                 width: 0;
                 height: 20px;
                 transition: 0.5s;
-            }
-            .submit{
-                height: 100px;
-                width: 100px;
-                border-radius: 50px;
-                border: 1px solid #000;
-                background-color: #000;
-                color: #fff;
-                font-size: 20px;
-                font-weight: 100;
             }
         }
     }

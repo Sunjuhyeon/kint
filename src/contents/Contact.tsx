@@ -55,9 +55,7 @@ const Contact:React.FC = (props) => {
                     </div>
                         {errors.agree && <span>개인정보 수집 및 이용에 동의해주세요.</span>}
                     <div className='d-flex justify-content-center py-5'>
-                        <div className='submitbox'>
-                            <input className='submit' type="submit" value="보내기" />
-                        </div>
+                        <input className='submit' type="submit" value="보내기" />
                     </div>
                 </form>
             </div>
